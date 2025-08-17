@@ -1,0 +1,19 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Demo App Monitoring",
+    "panels": [
+      {
+        "type": "stat",
+        "title": "Demo App Status",
+        "targets": [
+          {
+            "expr": "up{job=\"demo-app\"}",
+            "refId": "A"
+          }
+        ],
+        "gridPos": {"x":0,"y":0,"w":24,"h":8}
+      }
+    ]
+  }
+}
